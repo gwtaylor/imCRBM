@@ -16,11 +16,16 @@ not been tested to the degree that would be advisable in any important
 application.  All use of these programs is entirely at the user's own risk.
 
 #External dependencies
-sample_vector.m (Sample from multiple categorical distributions) is a
-requirement. This also depends on col_sum.m.
+`sample_vector.m` (Sample from multiple categorical distributions) is a
+requirement. This also depends on `col_sum.m`.
 They can both be obtained from Tom Minka's lightspeed toolbox: 
      http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/
 
+#Sample data
+You will need to move the sample data, [Normal1_M.mat](http://www.uoguelph.ca/~gwtaylor/publications/cvpr2010/data/Normal1_M.mat) and [Jog1_M.mat](http://www.uoguelph.ca/~gwtaylor/publications/cvpr2010/data/Jog1_M.mat) to
+the `data/` subdirectory or change the respective paths in the scripts.
+
+#Usage
 This subdirectory contains files related to learning and generation:
 
 ```
@@ -44,9 +49,6 @@ Note that there are two entry points, depending on whether you want to
 train the model completely unsupervised (i.e. assuming no category
 labels) or supervised (i.e. with category labels corresponding to
 motion style). 
-
-You will need to move the sample data, Normal1_M.mat and Jog1_M.mat to
-the data/ subdirectory or change the respective paths in the scripts.
 
 The Motion subdirectory contains files related to motion capture data: 
 preprocessing/postprocessing, playback, etc ...
