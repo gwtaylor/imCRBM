@@ -29,9 +29,9 @@ the `data/` subdirectory or change the respective paths in the scripts.
 This subdirectory contains files related to learning and generation:
 
 ```
-demo_mixture_mit.m		 Main file for learning (unsupervised) 
+demo_imcrbm_mit.m		 Main file for learning (unsupervised) 
                                  and generation
-demo_mixture_mit_labels.m        Main file for learning (supervised)
+demo_imcrbm_mit_labels.m        Main file for learning (supervised)
                                  and generation
 mixgaussiancrbm.m                Trains imCRBM unsupervised
 mixgaussiancrbm_labels.m         Trains imCRBM with supervision on
