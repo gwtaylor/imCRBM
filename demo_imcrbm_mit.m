@@ -30,7 +30,7 @@ clear all; close all;
 more off;   %turn off paging
 
 %Change this to a writeable path on your system!
-snapshot_root = '/ais/gobi1/gwtaylor/Experiments/implicit/snapshots/'
+snapshot_root = '/tmp/Experiments/implicit/snapshots/';
 
 % Model & training properties
 % Note that additional parameters (learning rates, sparsity, etc.)
