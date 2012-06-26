@@ -29,9 +29,9 @@ the `data/` subdirectory or change the respective paths in the scripts.
 This subdirectory contains files related to learning and generation:
 
 ```
-demo_imcrbm_mit.m		 Main file for learning (unsupervised) 
+demo_imcrbm_mit.m		         Main file for learning (unsupervised) 
                                  and generation
-demo_imcrbm_mit_labels.m        Main file for learning (supervised)
+demo_imcrbm_mit_labels.m         Main file for learning (supervised)
                                  and generation
 mixgaussiancrbm.m                Trains imCRBM unsupervised
 mixgaussiancrbm_labels.m         Trains imCRBM with supervision on
@@ -54,13 +54,14 @@ The Motion subdirectory contains files related to motion capture data:
 preprocessing/postprocessing, playback, etc ...
 
 #Parameters
-There are a number of parameters that can be changed. Most are at the
+There are a number of parameters (number of discrete components,
+number of hidden units, etc.) that can be changed. Most are at the
 top of `demo_imcrbm_mit.m` and `demo_imcrbm_mit_labels.m`. But there
-are also some parameters defined in `mixgaussiancrbm.m` and
-`mixgaussiancrbm_labels.m`. The default parameters should work;
-however, if `/tmp` is not writeable, then the definition of
-`snapshot_root` must be changed in `demo_imcrbm_mit.m` and
-`demo_imcrbm_mit_labels.m`.
+are also some parameters (learning rates, sparsity settings, etc.) 
+defined in `mixgaussiancrbm.m` and `mixgaussiancrbm_labels.m`. 
+The default parameters should work; however, if `/tmp` is not writeable, 
+then the definition of `snapshot_root` must be changed in `demo_imcrbm_mit.m` 
+and `demo_imcrbm_mit_labels.m`.
 
 #Acknowledgements
 The sample data we have included has been provided by Eugene Hsu:
