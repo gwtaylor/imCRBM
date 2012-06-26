@@ -30,7 +30,7 @@ clear all; close all;
 more off;   %turn off paging
 
 %Change this to a writeable path on your system!
-snapshot_root = '/tmp/Experiments/implicit/snapshots/';
+snapshot_root = '/tmp';
 
 % Model & training properties
 % Note that additional parameters (learning rates, sparsity, etc.)
@@ -85,7 +85,7 @@ initdata = batchdata;
 %every xxx epochs, write a snapshot of the model
 %will be written to snapshot_path_epxxx.mat
 snapshot_path = [snapshot_root ...
-                 'mixcrbm_mit_walk_jog_30fps_6taps_200hid_cd10_4comp_' ...
+                 '/mixcrbm_mit_walk_jog_30fps_6taps_200hid_cd10_4comp_' ...
                  'sparse'];
 
 fprintf(1,'Training Layer 1 CRBM, order %d: %d-%d \n',nt,numdims,numhid);

@@ -53,6 +53,15 @@ motion style).
 The Motion subdirectory contains files related to motion capture data: 
 preprocessing/postprocessing, playback, etc ...
 
+#Parameters
+There are a number of parameters that can be changed. Most are at the
+top of `demo_imcrbm_mit.m` and `demo_imcrbm_mit_labels.m`. But there
+are also some parameters defined in `mixgaussiancrbm.m` and
+`mixgaussiancrbm_labels.m`. The default parameters should work;
+however, if `/tmp` is not writeable, then the definition of
+`snapshot_root` must be changed in `demo_imcrbm_mit.m` and
+`demo_imcrbm_mit_labels.m`.
+
 #Acknowledgements
 The sample data we have included has been provided by Eugene Hsu:
 http://people.csail.mit.edu/ehsu/work/sig05stf/

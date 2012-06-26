@@ -66,14 +66,14 @@ probcomp = bsxfun(@rdivide,expfe,sum(expfe,2)); %normalize
 %     http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/
 asm = sample_vector(probcomp'); %returns row vector of assignments
 
-sfigure(32); clf
+figure(32); clf
 imagesc(probcomp'); colormap gray; %axis off
 title('discrete component posterior')
 xlabel('frame')
 ylabel('component')
 
 %Posteriors/recon under each component
-sfigure(33); clf; sfigure(34); clf
+figure(33); clf; figure(34); clf
 
 %this will hold the posteriors
 %where we have selected different assignments
@@ -88,7 +88,7 @@ for cc=1:numcomp
   
   hposteriors = 1./(1 + exp(-eta));    %logistic      
   
-  sfigure(33);
+  figure(33);
   subplot(numcomp,1,cc);
   imagesc(hposteriors'); colormap gray; %axis off      
   ylabel('hidden unit')
@@ -105,7 +105,7 @@ for cc=1:numcomp
       effvisbiases(:,:,cc);
   
   % arbitrarily select dimensions 7, 18 to show recon
-  sfigure(34);
+  figure(34);
   subplot(numcomp,2,2*(cc-1)+1);
   plot(data(:,7,1)); hold on; plot(negdata(:,7),'r');
   title(sprintf('component %d reconstruction (red) vs. true (blue)', cc))
@@ -129,13 +129,13 @@ for cc=1:numcomp
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 end
 
-sfigure(35); clf
+figure(35); clf
 imagesc(poshidprobs'); colormap gray; %axis off
 ylabel('hidden')
 xlabel('frame')
 title('hidden posteriors using selected component')
 
-sfigure(36); clf
+figure(36); clf
 subplot(2,1,1);
 plot(data(:,7,1)); hold on; plot(segnegdata(:,7),'r');
 title('mixture reconstruction (red) vs. true (blue)')
