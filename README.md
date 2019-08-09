@@ -2,8 +2,7 @@
 Matlab implementation of Implicit mixtures of Conditional Restricted Boltzmann Machines.
 Code provided by Graham Taylor
 
-For more information, see:
-    http://www.uoguelph.ca/~gwtaylor/publications/cvpr2010/
+For more information, see [this cached copy of http://www.uoguelph.ca/~gwtaylor/publications/cvpr2010/](https://uoguelphca-my.sharepoint.com/:f:/r/personal/gwtaylor_uoguelph_ca/Documents/Sharing/publications/cvpr2010?csf=1&e=oZimM2). Note I do not intend to maintain this website. 
 
 Permission is granted for anyone to copy, use, modify, or distribute this
 program and accompanying programs and documents for any purpose, provided
@@ -22,7 +21,7 @@ They can both be obtained from Tom Minka's lightspeed toolbox:
      http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/
 
 #Sample data
-You will need to move the sample data, [Normal1_M.mat](http://www.uoguelph.ca/~gwtaylor/publications/cvpr2010/data/Normal1_M.mat) and [Jog1_M.mat](http://www.uoguelph.ca/~gwtaylor/publications/cvpr2010/data/Jog1_M.mat) to
+You will need to move the sample data, [Normal1_M.mat](https://uoguelphca-my.sharepoint.com/:u:/r/personal/gwtaylor_uoguelph_ca/Documents/Sharing/publications/cvpr2010/data/Normal1_M.mat?csf=1&e=mpjv5C) and [Jog1_M.mat](https://uoguelphca-my.sharepoint.com/:u:/r/personal/gwtaylor_uoguelph_ca/Documents/Sharing/publications/cvpr2010/data/Jog1_M.mat?csf=1&e=ep0GO2) to
 the `data/` subdirectory or change the respective paths in the scripts.
 
 #Usage
