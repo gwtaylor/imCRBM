@@ -2,7 +2,7 @@
 Matlab implementation of Implicit mixtures of Conditional Restricted Boltzmann Machines.
 Code provided by Graham Taylor
 
-For more information, see [this cached copy of http://www.uoguelph.ca/~gwtaylor/publications/cvpr2010/](https://uoguelphca-my.sharepoint.com/:f:/r/personal/gwtaylor_uoguelph_ca/Documents/Sharing/publications/cvpr2010?csf=1&e=oZimM2). Note I do not intend to maintain this website. 
+For more information, see [this cached copy of http://www.uoguelph.ca/~gwtaylor/publications/cvpr2010/](https://uoguelphca-my.sharepoint.com/:f:/r/personal/gwtaylor_uoguelph_ca/Documents/Sharing/publications/cvpr2010?csf=1&e=oZimM2). Note I do not intend to maintain this page. 
 
 Permission is granted for anyone to copy, use, modify, or distribute this
 program and accompanying programs and documents for any purpose, provided
