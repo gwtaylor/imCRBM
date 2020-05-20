@@ -1,8 +1,9 @@
-#imCRBM
+# imCRBM
+
 Matlab implementation of Implicit mixtures of Conditional Restricted Boltzmann Machines.
 Code provided by Graham Taylor
 
-For more information, see [this cached copy of http://www.uoguelph.ca/~gwtaylor/publications/cvpr2010/](https://uoguelphca-my.sharepoint.com/:f:/r/personal/gwtaylor_uoguelph_ca/Documents/Sharing/publications/cvpr2010?csf=1&e=oZimM2). Note I do not intend to maintain this page. 
+For more information, see [this cached copy of http://www.uoguelph.ca/~gwtaylor/publications/cvpr2010/](https://uoguelphca-my.sharepoint.com/:f:/g/personal/gwtaylor_uoguelph_ca/EtgEYrzrVCtPj1DFcrVE2AsBeiTIgxGgx4xyJCRd89F3NQ?e=zhYQ97). Note I do not intend to maintain this page. 
 
 Permission is granted for anyone to copy, use, modify, or distribute this
 program and accompanying programs and documents for any purpose, provided
@@ -14,17 +15,18 @@ implied.  As the programs were written for research purposes only, they have
 not been tested to the degree that would be advisable in any important
 application.  All use of these programs is entirely at the user's own risk.
 
-#External dependencies
+## External dependencies
+
 `sample_vector.m` (Sample from multiple categorical distributions) is a
 requirement. This also depends on `col_sum.m`.
 They can both be obtained from Tom Minka's lightspeed toolbox: 
      http://research.microsoft.com/en-us/um/people/minka/software/lightspeed/
 
-#Sample data
+## Sample data
 You will need to move the sample data, [Normal1_M.mat](https://uoguelphca-my.sharepoint.com/:u:/r/personal/gwtaylor_uoguelph_ca/Documents/Sharing/publications/cvpr2010/data/Normal1_M.mat?csf=1&e=mpjv5C) and [Jog1_M.mat](https://uoguelphca-my.sharepoint.com/:u:/r/personal/gwtaylor_uoguelph_ca/Documents/Sharing/publications/cvpr2010/data/Jog1_M.mat?csf=1&e=ep0GO2) to
 the `data/` subdirectory or change the respective paths in the scripts.
 
-#Usage
+## Usage
 This subdirectory contains files related to learning and generation:
 
 ```
@@ -52,7 +54,7 @@ motion style).
 The Motion subdirectory contains files related to motion capture data: 
 preprocessing/postprocessing, playback, etc ...
 
-#Parameters
+## Parameters
 There are a number of parameters (number of discrete components,
 number of hidden units, etc.) that can be changed. Most are at the
 top of `demo_imcrbm_mit.m` and `demo_imcrbm_mit_labels.m`. But there
@@ -62,7 +64,7 @@ The default parameters should work; however, if `/tmp` is not writeable,
 then the definition of `snapshot_root` must be changed in `demo_imcrbm_mit.m` 
 and `demo_imcrbm_mit_labels.m`.
 
-#Acknowledgements
+## Acknowledgements
 The sample data we have included has been provided by Eugene Hsu:
 http://people.csail.mit.edu/ehsu/work/sig05stf/
 
